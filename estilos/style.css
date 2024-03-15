@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+:root{
+    --cor-primária: #0f0e0e;
+    --cor-secundária: #eeeeee;
+    --cor-terciária: #8b9a46 ;
+    --cor-quartária: #541212 ;
+
+
+
+    --fonte-única: "Krona One", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primária);
+    color: var(--cor-secundária);
+}
+a{
+    color: var(--cor-terciária);
+}
+.strong{
+    color: var(--cor-terciária);
+}
+span{
+    color: var(--cor-terciária);
+    padding: 10px;
+}
+.apresentacao {
+    padding: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px
+}
+.apresentacao2 {
+    width: 50%;
+}
+.título{
+    font-size: 2.25rem;
+    font-family: var(--fonte-única);
+  font-weight: 400;
+  font-style: normal;
+}
+.paragrafo{
+    font-size: 1.5rem;
+}
+.div1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-secundária);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0px;
+    text-decoration: none;
+    font-family: var(--fonte-única);
+  font-weight: 600;
+  font-style: normal;
+}
+.AMR{
+    font-family: var(--fonte-única);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.links:hover {
+    background-color: var(--cor-quartária);
+    color: var(--cor-secundária);
+}
+.footer{
+    color: var(--cor-primária);
+    background-color: var(--cor-secundária);
+    padding: 30px;
+    text-align: center;
+    font-size: 1.875rem;
+    
+}
+.header{
+    padding: 2% 0% 0% 15%;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkHeader{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--cor-terciária);
+    margin: 0 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    padding: 10px 15px
+}
+.linkHeader:hover{
+    background-color: var(--cor-quartária);
+    color: var(--cor-secundária);
+}
+.imagem1{
+    width: 50%;
+}
+
+@media (max-width: 1200px) {
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+    .header{
+        padding: 6%;
+    }
+    .nav{
+        justify-content: center;
+        padding: 5%;
+    }
+    .apresentacao2{
+        width: auto;
+    }
+    
+}
